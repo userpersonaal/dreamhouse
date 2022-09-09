@@ -1,0 +1,221 @@
+/* 
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+body
+{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* =============
+    Typograaphy
+    ============
+ */
+
+
+ h1,h2,h3
+ {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    color: #143774;
+ }
+
+ h1 
+ {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+ }
+
+ /* h1 subtitle */
+
+ .subtitle
+ {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+    letter-spacing: 5px;
+ }
+
+ .article-title
+ {
+    font-size: 1.5rem;
+ }
+
+.article-recent-main img 
+{
+    width: 100%;
+
+}
+
+
+ .article-read-more, .article-info
+{
+    font-size: .875rem;
+}
+
+.article-read-more
+{
+    text-decoration: none;
+    color: #1792d2;
+    font-weight: 700;
+}
+
+
+.article-read-more:hover,
+.article-read-more:focus
+{
+    text-decoration: underline;
+    color: #143774;
+}
+
+/* =============
+    Layout
+    ============
+ */
+
+
+ .container
+ {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+ }
+
+ .container-nav
+ {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .container-flex
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ @media (min-width:935px)
+ {
+    .container-flex
+    {
+        flex-direction: row;
+    }
+
+    main
+    {
+        width: 75%;
+    }
+
+    aside 
+    {
+        width: 20%;
+    }
+ }
+
+.sidebar-widget img 
+{
+    width: 100%;
+}
+
+
+header
+{
+    padding: 2em 0;
+}
+
+/* =============
+    Navigation
+    ============
+ */
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li 
+{
+    margin-left: 2em;
+}
+
+nav a 
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: #707070;
+    padding: .25em;
+}
+
+nav a:hover 
+{
+    color: #1792d2;
+}
+
+.current-page
+{
+    border-bottom: 2px solid #1792d2;
+}
+
+
+.article-featured img 
+{
+    width: 100%;
+}
+
+footer
+{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p 
+{
+    color: #1792d2;
+    font-weight: 400;
+}
+
+.cr
+{
+    color: #1792d2;
+    font-weight: 200;
+}
+
+/* =============
+    Responsive
+    ============
+ */
+
+@media (max-width:714px) 
+{
+    .container-flex
+    {
+        display: block;
+    }
+
+    header
+    {
+        text-align: center;
+    }
+
+    nav li 
+    {
+        margin: 1em .5em;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+}
